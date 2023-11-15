@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Backup existing sources.list files
-sudo mv /etc/apt/sources.list{,.backup}
-sudo mv /etc/apt/sources.list.d{,.backup}
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.backup
+sudo mv /etc/apt/sources.list.d /etc/apt/sources.list.d.backup
 
 # Create a new sources.list.d directory
 sudo mkdir /etc/apt/sources.list.d
